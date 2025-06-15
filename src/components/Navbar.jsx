@@ -94,6 +94,14 @@ const Navbar = () => {
                 >
                   Mejor lenguaje para niños
                 </Link>
+                <Link
+                  to="/articulos/pensamiento-computacional"
+                  className="px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100"
+                  onClick={() => setOpenDropdown(false)}
+                >
+                  Pensamiento Computacional
+                </Link>
+
               </div>
             )}
           </div>

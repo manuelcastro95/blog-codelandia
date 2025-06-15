@@ -38,6 +38,12 @@ const Home = () => {
             image: "/img/hora-codigo.png",
             description: "Organiza un evento divertido y educativo para niños en tu comunidad.",
           },
+          {
+            path: "/articulos/pensamiento-computacional",
+            title: "¿Qué es el pensamiento computacional y por qué es clave para los niños?",
+            image: "/img/pensamiento-computacional.png",
+            description: "El pensamiento computacional es la habilidad de resolver problemas utilizando conceptos similares a los que emplea una computadora.",
+          },
         ].map((article) => (
           <Link
             key={article.path}

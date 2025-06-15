@@ -14,6 +14,7 @@ import Top5Platforms from './pages/articles/Top5Platforms';
 import ParentMistakes from './pages/articles/ParentMistakes';
 import HourOfCode from './pages/articles/HourOfCode';
 import BestLanguage from './pages/articles/BestLanguage';
+import ComputationalThinking from './pages/articles/ComputationalThinking';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/articulos/errores-de-padres" element={<ParentMistakes />} />
         <Route path="/articulos/hora-del-codigo" element={<HourOfCode />} />
         <Route path="/articulos/mejor-lenguaje" element={<BestLanguage />} />
+        <Route path="/articulos/pensamiento-computacional" element={<ComputationalThinking />} />
       </Routes>
     </>
   );
