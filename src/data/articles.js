@@ -23,7 +23,6 @@ export const articles = [
     title: "¿Por qué los niños deberían aprender a programar desde pequeños?",
     description:
       "Programar no es solo escribir código: desarrolla el pensamiento lógico, la paciencia y la creatividad. Te explicamos qué gana un niño que aprende a programar y cómo empezar sin presión.",
-    image: "/img/aprender-programar.png",
     category: "Primeros pasos",
     date: "2025-05-20",
     readMinutes: 6,
@@ -35,7 +34,6 @@ export const articles = [
     title: "Qué es el pensamiento computacional y por qué es clave para los niños",
     description:
       "Descomponer, buscar patrones, abstraer y crear algoritmos: las cuatro habilidades del pensamiento computacional, explicadas con ejemplos cotidianos que puedes practicar sin computadora.",
-    image: "/img/pensamiento-computacional.png",
     category: "Conceptos",
     date: "2025-05-22",
     readMinutes: 7,
@@ -47,7 +45,6 @@ export const articles = [
     title: "¿Cuál es el mejor lenguaje de programación para que un niño empiece?",
     description:
       "Scratch, Blockly, Python o JavaScript: cuál conviene según la edad y qué buscar en un primer lenguaje. Una guía para elegir sin dejarse llevar por modas.",
-    image: "/img/lenguajes-programacion-ninos.png",
     category: "Primeros pasos",
     date: "2025-05-24",
     readMinutes: 7,
@@ -59,7 +56,6 @@ export const articles = [
     title: "Las mejores plataformas para que los niños aprendan a programar",
     description:
       "Scratch, Code.org, Blockly Games, Tynker y más: qué ofrece cada plataforma, para qué edad sirve y cuáles son gratuitas. Comparativa honesta para familias y docentes.",
-    image: "/img/plataformas.png",
     category: "Herramientas",
     date: "2025-05-26",
     readMinutes: 8,
@@ -71,7 +67,6 @@ export const articles = [
     title: "Scratch desde cero: cómo hacer tu primer proyecto paso a paso",
     description:
       "Una guía práctica para crear el primer juego en Scratch con un niño: desde abrir el editor hasta hacer que un personaje se mueva, hable y gane puntos. Sin conocimientos previos.",
-    image: "/img/plataformas.png",
     category: "Herramientas",
     date: "2025-05-28",
     readMinutes: 8,
@@ -83,7 +78,6 @@ export const articles = [
     title: "Qué enseñar según la edad: una guía de programación de los 5 a los 12 años",
     description:
       "Lo que funciona a los 5 años aburre a los 11. Esta guía por etapas explica qué conceptos y herramientas encajan en cada edad, de los bloques sin lectura al primer código escrito.",
-    image: "/img/aprender-programar.png",
     category: "Para familias",
     date: "2025-05-30",
     readMinutes: 7,
@@ -95,7 +89,6 @@ export const articles = [
     title: "Errores comunes al enseñar programación en casa (y cómo evitarlos)",
     description:
       "Convertirlo en obligación, resolverle todo, obsesionarse con el lenguaje de moda: los errores más frecuentes al enseñar a programar en casa y qué hacer en su lugar.",
-    image: "/img/errores-padres.png",
     category: "Para familias",
     date: "2025-06-01",
     readMinutes: 6,
@@ -107,7 +100,6 @@ export const articles = [
     title: "Robótica y juegos para aprender a programar sin pantalla",
     description:
       "Se puede enseñar la lógica de la programación con cartas, juguetes y juegos de mesa, sin encender una pantalla. Ideas de programación 'desenchufada' para los más pequeños.",
-    image: "/img/hora-codigo.png",
     category: "Para familias",
     date: "2025-06-03",
     readMinutes: 6,
@@ -119,7 +111,6 @@ export const articles = [
     title: "Cómo organizar una Hora del Código en casa o en el aula",
     description:
       "La Hora del Código es una actividad de 60 minutos para iniciarse en la programación. Te contamos cómo prepararla, qué actividades elegir y cómo mantener la motivación.",
-    image: "/img/hora-codigo.png",
     category: "Herramientas",
     date: "2025-06-05",
     readMinutes: 6,
@@ -131,12 +122,17 @@ export const articles = [
     title: "Programar y tiempo de pantalla: cómo encontrar el equilibrio",
     description:
       "No todo el tiempo frente a la pantalla es igual. Diferenciamos el consumo pasivo de la creación activa y damos pautas para que programar sume sin descuidar el equilibrio.",
-    image: "/img/errores-padres.png",
     category: "Para familias",
     date: "2025-06-07",
     readMinutes: 6,
   },
 ];
+
+// Cada artículo tiene su propia imagen en /img, nombrada igual que su slug.
+// Derivarla aquí garantiza que nunca se repita ni se desincronice.
+articles.forEach((a) => {
+  a.image = `/img/${a.slug}.webp`;
+});
 
 /** Devuelve los metadatos de un artículo por su slug. */
 export function getArticle(slug) {
