@@ -68,7 +68,7 @@ const Navbar = () => {
                     key={a.slug}
                     to={a.path}
                     className="block px-3 py-2 text-sm text-slate-700 rounded-lg hover:bg-brand-50 hover:text-brand-800"
-                    onMouseDown={() => setOpenDropdown(false)}
+                    onClick={() => setOpenDropdown(false)}
                   >
                     {a.cardTitle}
                   </Link>
