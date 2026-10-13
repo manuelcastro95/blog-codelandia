@@ -8,5 +8,5 @@
 export const site = {
   name: "Codelandia",
   url: "https://blog-codelandia-mu.vercel.app",
-  email: "contacto@codelandia.online", // TODO: reemplazar por tu correo real
+  email: "manuelcastro911@gmail.com",
 };
